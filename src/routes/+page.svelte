@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="flex flex-col mt-5 mx-5">
+	<h1 class="mx-auto text-4xl bg-black">UNDER CONSTRUCTION</h1>
+</div>
+
+<style lang="postcss">
+	* {
+		@apply text-white;
+	}
+</style>
