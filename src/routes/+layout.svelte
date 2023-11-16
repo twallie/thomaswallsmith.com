@@ -22,7 +22,7 @@
 		background-image: radial-gradient(white 1px, transparent 0);
 		background-size: 40px 40px;
 		background-position: var(--a) var(--a);
-		animation-direction: alternate-reverse;
+		animation-direction: reverse;
 		animation-iteration-count: infinite;
 		animation-duration: 10s;
 	}
