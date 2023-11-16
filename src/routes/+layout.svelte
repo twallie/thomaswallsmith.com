@@ -19,22 +19,20 @@
 	:global(body) {
 		background: black;
 		animation-name: move;
-		background-image: radial-gradient(white 1px, transparent 0);
-		background-size: 40px 40px;
+		background-image: radial-gradient(white 2px, transparent 0);
+		background-size: 50px 50px;
 		background-position: var(--a) var(--a);
-		animation-direction: reverse;
+		animation-direction: alternate;
 		animation-iteration-count: infinite;
-		animation-duration: 10s;
+		animation-duration: 3600s;
 	}
 
 	@keyframes move {
 		from {
 			--a: 0px;
-			--b: 0px;
 		}
 		to {
-			--a: 1000px;
-			--b: 1000px;
+			--a: 100000px;
 		}
 	}
 </style>
