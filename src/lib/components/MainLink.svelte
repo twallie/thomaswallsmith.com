@@ -1,8 +1,15 @@
 <script lang="ts">
-	export let text: string;
+	import type { MainComponents } from '$lib/types';
+
+	export let goesTo: MainComponents;
+	export let shown: MainComponents;
+
+	const setShown = () => {
+		shown = goesTo;
+	};
 </script>
 
-<h1><span>{text}</span></h1>
+<button on:click={setShown}><h1><span>{goesTo}</span></h1></button>
 
 <style lang="postcss">
 	@property --size {
@@ -22,7 +29,7 @@
 	}
 	h1 {
 		/* animation css */
-		transition: font-size ease-in-out 0.5s;
+		transition: font-size ease-in-out 0.3s;
 	}
 	h1:hover {
 		@apply text-2xl;
