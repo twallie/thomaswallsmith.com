@@ -1,27 +1,37 @@
 <script lang="ts">
-	import SiteHeader from "$lib/components/SiteHeader.svelte";
+	import MainLink from '$lib/components/MainLink.svelte';
+	import SiteHeader from '$lib/components/SiteHeader.svelte';
 </script>
 
 <div class="flex flex-col mt-20 h-[100%] justify-center align-middle">
 	<SiteHeader />
-	<div class="flex flex-col mt-5 mx-10 text-center">
-		<p class="">
-			<span> This website is currently under construction </span>
-		</p>
-		<p class="">
-			<span> If you'd like to reach me, email me at thomaswallsmith@gmail.com </span>
-		</p>
-	</div>
+	<ul class="flex flex-col mt-5 text-xl font-mono justify-center text-center">
+		<li>
+			<MainLink text={'portfolio'} />
+		</li>
+		<li>
+			<MainLink text={'technologies'} />
+		</li>
+		<li>
+			<MainLink text={'about'} />
+		</li>
+		<li>
+			<MainLink text={'contact'} />
+		</li>
+	</ul>
 </div>
 
 <style lang="postcss">
 	* {
 		@apply text-white;
 	}
-	p {
-		@apply font-mono;
-	}
 	span {
 		@apply bg-black;
+	}
+	li {
+		padding: 0;
+		margin: 30px;
+		height: 20px;
+		list-style-type: none;
 	}
 </style>
