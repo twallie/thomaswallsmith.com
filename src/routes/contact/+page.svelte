@@ -4,7 +4,9 @@
 
 <SubsectionHeader pageTitle="contact" />
 <div class="flex flex-col mx-5 mt-[5rem]">
-	<p class="text-center font-mono text-xl"><span>COMING SOON!</span></p>
+	<p class="text-center font-mono text-xl">
+		<span>You can reach me at thomaswallsmith@gmail.com.</span>
+	</p>
 </div>
 
 <style lang="postcss">
