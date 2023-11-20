@@ -7,11 +7,11 @@
 	export let pageTitle: string;
 </script>
 
-<div class="flex flex-row ml-5 align-middle">
+<div class="flex flex-row ml-5 align-middle lg:mx-[10rem] xl:mx-[15rem] mt-5">
 	<button on:click={goHome}>
-		<img src={BackArrow} class="h-[50px] w-auto invert" alt="Back" />
+		<img src={BackArrow} class="h-[3rem] my- invert" alt="Back" />
 	</button>
-	<h1 class="ml-auto mr-5 text-2xl font-mono mt-1">
+	<h1 class="ml-auto mr-5 text-2xl font-mono mt-1 text-[30px]">
 		<span>{pageTitle}</span>
 	</h1>
 </div>
