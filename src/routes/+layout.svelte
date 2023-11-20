@@ -22,15 +22,6 @@
 	* {
 		@apply text-white;
 	}
-	li {
-		padding: 0;
-		margin: 30px;
-		height: 20px;
-		list-style-type: none;
-	}
-	span {
-		@apply bg-black;
-	}
 	@property --a {
 		syntax: '<length>';
 		inherits: false;
