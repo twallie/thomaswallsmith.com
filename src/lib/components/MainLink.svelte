@@ -1,15 +1,19 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import type { MainComponents } from '$lib/types';
 
 	export let goesTo: MainComponents;
-	export let shown: MainComponents;
 
-	const setShown = () => {
-		shown = goesTo;
+	const doGoTo = () => {
+		goto(goesTo);
 	};
 </script>
 
-<button on:click={setShown}><h1><span>{goesTo}</span></h1></button>
+<button on:click={doGoTo} class="w-full">
+	<h1 class="text-2xl font-mono mx-auto">
+		<span>{goesTo}</span>
+	</h1>
+</button>
 
 <style lang="postcss">
 	@property --size {

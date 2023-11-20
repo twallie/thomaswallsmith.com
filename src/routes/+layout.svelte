@@ -1,10 +1,36 @@
 <script lang="ts">
+	import { fade, fly } from 'svelte/transition';
 	import '../app.css';
+	import type { LayoutData } from './$types';
+	import SiteHeader from '$lib/components/SiteHeader.svelte';
+
+	export let data: LayoutData;
 </script>
 
-<slot />
+<div class="flex flex-col mt-20 h-[100%] justify-center align-middle">
+	<SiteHeader />
+	<div class="flex flex-col mt-5">
+		{#key data.url}
+			<div in:fade={{ duration: 200, delay: 200 }} out:fly={{ duration: 200 }}>
+				<slot />
+			</div>
+		{/key}
+	</div>
+</div>
 
-<style>
+<style lang="postcss">
+	* {
+		@apply text-white;
+	}
+	li {
+		padding: 0;
+		margin: 30px;
+		height: 20px;
+		list-style-type: none;
+	}
+	span {
+		@apply bg-black;
+	}
 	@property --a {
 		syntax: '<length>';
 		inherits: false;
