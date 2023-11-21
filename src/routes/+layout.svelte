@@ -7,7 +7,7 @@
 	export let data: LayoutData;
 </script>
 
-<div class="flex flex-col mt-20 h-[100%] justify-center align-middle">
+<div class="flex flex-col mt-20 h-[100%] justify-center align-middle md:mx-40">
 	<SiteHeader />
 	<div class="flex flex-col mt-5">
 		{#key data.url}
@@ -39,17 +39,18 @@
 		background-image: radial-gradient(white 2px, transparent 0);
 		background-size: 50px 50px;
 		background-position: var(--a) var(--a);
-		animation-direction: alternate;
+		animation-direction: forward;
 		animation-iteration-count: infinite;
-		animation-duration: 3600s;
+		animation-duration: 2s;
+		animation-timing-function: linear;
 	}
 
 	@keyframes move {
-		from {
+		0% {
 			--a: 0px;
 		}
-		to {
-			--a: 100000px;
+		100% {
+			--a: 100px;
 		}
 	}
 </style>
