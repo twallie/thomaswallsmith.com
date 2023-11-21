@@ -1,0 +1,33 @@
+<script lang="ts">
+	import Triangle from '$lib/images/triangle.svg';
+
+	export let title: string;
+	export let opened = false;
+
+	const flipOpened = () => {
+		opened = !opened;
+	};
+</script>
+
+<button class="flex flex-row" on:click={flipOpened}>
+	<img
+		class="
+            w-[15px]
+            invert
+            {opened ? 'rotate-180' : 'rotate-90'} 
+            mr-2
+            my-auto
+        "
+		src={Triangle}
+		alt="Open/close section"
+	/>
+	<span>
+		<h1 class="font-bold text-xl font-mono">{title}</h1>
+	</span>
+</button>
+
+<style lang="postcss">
+	span {
+		@apply bg-black;
+	}
+</style>
