@@ -12,9 +12,3 @@
 	<Collapsible title="Databases" />
 	<Collapsible title="Java" />
 </div>
-
-<style lang="postcss">
-	span {
-		@apply bg-black;
-	}
-</style>
