@@ -9,21 +9,21 @@
 	};
 </script>
 
-<button class="flex flex-row" on:click={flipOpened}>
+<button class="flex flex-row ml-auto mr-2" on:click={flipOpened}>
+	<span>
+		<h1 class="font-bold text-xl font-mono">{title}</h1>
+	</span>
 	<img
 		class="
             w-[15px]
             invert
-            {opened ? 'rotate-180' : 'rotate-90'} 
-            mr-2
+            {opened ? 'rotate-180' : '-rotate-90'} 
+            ml-2
             my-auto
         "
 		src={Triangle}
 		alt="Open/close section"
 	/>
-	<span>
-		<h1 class="font-bold text-xl font-mono">{title}</h1>
-	</span>
 </button>
 
 <style lang="postcss">

@@ -6,7 +6,7 @@
 </script>
 
 <SubsectionHeader pageTitle="technologies" />
-<div class="flex flex-col mx-5 mt-4 font-mono">
+<div class="flex flex-col mt-4 font-mono">
 	<JavaScriptTypeScript />
 	<Collapsible title="Python" />
 	<Collapsible title="Databases" />

@@ -11,7 +11,7 @@
 	<SiteHeader />
 	<div class="flex flex-col mt-5">
 		{#key data.url}
-			<div in:fade={{ duration: 100, delay: 100 }} out:fade={{ duration: 100 }}>
+			<div in:fly={{ x: -500, duration: 100, delay: 100 }} out:fly={{ x: -500, duration: 100 }}>
 				<slot />
 			</div>
 		{/key}

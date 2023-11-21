@@ -9,9 +9,11 @@
 {#if opened}
 	<div in:fly={{ x: -200, duration: 200 }} out:fly={{ x: -200, duration: 200 }} class="mb-5 ml-2">
 		<span>
-			TypeScript (and it's subset JavaScript) are my preferred languages for all things web dev.
+			<p class="text-right">
+				TypeScript (and it's subset JavaScript) are my preferred languages for all things web dev.
+			</p>
 		</span>
-		<div class="flex flex-row justify-around">
+		<div class="flex flex-row justify-around mr-3">
 			<div class="mt-2">
 				<span class="text-xl underline font-bol"> Runtimes </span>
 				<ul>
