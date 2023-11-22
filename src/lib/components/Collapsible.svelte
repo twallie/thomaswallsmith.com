@@ -4,7 +4,10 @@
 	export let title: string;
 	export let opened = false;
 
+	export let onOpen: () => void = () => {};
+
 	const flipOpened = () => {
+		onOpen();
 		opened = !opened;
 	};
 </script>

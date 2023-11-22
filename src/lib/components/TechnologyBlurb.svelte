@@ -8,14 +8,15 @@
 	export let bulletpoints: Bulletpoint[];
 
 	export let opened = false;
+	export let onOpen: () => void = () => {};
 </script>
 
-<Collapsible {title} bind:opened />
+<Collapsible {title} bind:opened {onOpen} />
 {#if opened}
 	<div
-		in:fly={{ x: -200, duration: 200 }}
-		out:fly={{ x: 200, duration: 200 }}
-		class="mb-5 ml-2 mr-3"
+		in:fly={{ x: -200, duration: 400 }}
+		out:fly={{ x: 0, duration: 200 }}
+		class="mb-4 ml-1 mr-2 p-1"
 	>
 		<p class="text-right">
 			<span>

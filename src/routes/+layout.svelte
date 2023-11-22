@@ -11,7 +11,7 @@
 	<SiteHeader />
 	<div class="flex flex-col mt-5">
 		{#key data.url}
-			<div in:fly={{ x: -500, duration: 100, delay: 100 }} out:fly={{ x: -500, duration: 100 }}>
+			<div in:fly={{ x: -500, duration: 200, delay: 200 }} out:fly={{ x: -500, duration: 200 }}>
 				<slot />
 			</div>
 		{/key}
