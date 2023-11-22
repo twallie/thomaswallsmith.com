@@ -1,14 +1,16 @@
 <script lang="ts">
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	import '../app.css';
 	import type { LayoutData } from './$types';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
 
 	export let data: LayoutData;
+
+	$: atHome = data.url === '/';
 </script>
 
 <div class="flex flex-col mt-20 h-[100%] justify-center align-middle md:mx-40">
-	<SiteHeader />
+	<SiteHeader {atHome} />
 	<div class="flex flex-col mt-5">
 		{#key data.url}
 			<div in:fly={{ x: -500, duration: 200, delay: 200 }} out:fly={{ x: -500, duration: 200 }}>
