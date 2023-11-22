@@ -1,7 +1,15 @@
-<div class="mx-auto text-center">
-	<h1 class="box text-3xl mr-auto"><span>thomaswallsmith.com</span></h1>
+<script lang="ts">
+	import { goto } from '$app/navigation';
+
+	const onClick = () => {
+		goto('/');
+	};
+</script>
+
+<button on:click={onClick} class="mx-auto text-center">
+	<h1 class="text-3xl mr-auto"><span>thomaswallsmith.com</span></h1>
 	<p class="text-sm"><span>the fullstack developer of your dreams</span></p>
-</div>
+</button>
 
 <style lang="postcss">
 	@keyframes cursor-blink {
@@ -9,7 +17,7 @@
 			opacity: 0;
 		}
 	}
-	.box::after {
+	h1::after {
 		translate: 0 5px;
 		margin-left: 2px;
 		content: '';
