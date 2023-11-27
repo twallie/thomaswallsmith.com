@@ -53,13 +53,8 @@
 	}
 
 	h1::after {
-		translate: 0 5px;
-		margin-left: 2px;
+		@apply translate-y-1 ml-0.5 bg-[#ffffff] w-0.5 h-[1em] inline-block;
 		content: '';
-		width: 3px;
-		height: 1em;
-		background: #ffffff;
-		display: inline-block;
 		animation: cursor-blink 1.5s steps(2) infinite;
 	}
 
