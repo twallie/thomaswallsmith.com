@@ -14,7 +14,7 @@
 
 <Collapsible {title} bind:opened {onOpen} />
 {#if opened}
-	<div in:fly={{ x: -200, duration: 400 }} class="mb-4 ml-1 mr-2 p-1">
+	<div in:fly={{ x: -200, duration: 400 }} class="mb-4 ml-1">
 		<CollapsibleContentTechnology {description} {bulletpoints} />
 	</div>
 {/if}

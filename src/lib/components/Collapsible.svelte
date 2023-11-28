@@ -12,13 +12,13 @@
 	};
 </script>
 
-<button class="flex flex-row ml-auto mr-2" on:click={flipOpened}>
+<button class="flex flex-row ml-auto" on:click={flipOpened}>
 	<span>
-		<h1 class="font-bold text-xl font-mono">{title}</h1>
+		<h1 class="font-bold text-lg font-mono">{title}</h1>
 	</span>
 	<img
 		class="
-            w-[15px]
+            w-[12px]
             invert
             {opened ? 'rotate-180' : '-rotate-90'} 
             ml-2

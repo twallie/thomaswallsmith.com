@@ -5,7 +5,7 @@
 	export let bulletpoints: Bulletpoint[];
 </script>
 
-<p class="text-right">
+<p class="text-right text-sm">
 	<span>
 		{description}
 	</span>
@@ -13,7 +13,7 @@
 <div class="flex flex-row flex-wrap justify-around xl:ml-[50%] space-x-3 mt-4 mb-4">
 	{#each bulletpoints as bulletpoint}
 		<div class="mt-2">
-			<span class="text-xl underline font-bold">{bulletpoint.title}</span>
+			<span class="text-lg underline font-bold">{bulletpoint.title}</span>
 			<ul>
 				{#each bulletpoint.points as point}
 					<li>

@@ -22,8 +22,8 @@
 				points: ['SvelteKit', 'Express.js', 'Next.js']
 			},
 			{
-				title: 'APIs/SDKs',
-				points: ['OpenAI JavaScript API', 'Firebase JavaScript SDK', 'supabase-js']
+				title: 'Libraries',
+				points: ['OpenAI', 'Firebase', 'Supabase']
 			}
 		]
 	};
@@ -87,7 +87,7 @@
 </script>
 
 <SubsectionHeader pageTitle="technologies" />
-<div class="flex flex-col mt-4 font-mono">
+<div class="flex flex-col font-mono">
 	{#each sections as section, i}
 		<TechnologyBlurb
 			title={section.title}
