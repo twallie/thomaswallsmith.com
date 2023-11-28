@@ -62,8 +62,4 @@
 	p {
 		@apply font-mono;
 	}
-
-	span {
-		@apply bg-black;
-	}
 </style>

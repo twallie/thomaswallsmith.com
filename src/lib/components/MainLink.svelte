@@ -28,9 +28,6 @@
 			--size: 200px;
 		}
 	}
-	span {
-		@apply bg-black;
-	}
 	h1 {
 		/* animation css */
 		transition: font-size ease-in-out 0.3s;

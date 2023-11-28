@@ -21,6 +21,10 @@
 </div>
 
 <style lang="postcss">
+	:global(span) {
+		@apply bg-black bg-opacity-75;
+	}
+
 	* {
 		@apply text-white;
 	}

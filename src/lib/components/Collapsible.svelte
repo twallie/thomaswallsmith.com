@@ -28,9 +28,3 @@
 		alt="Open/close section"
 	/>
 </button>
-
-<style lang="postcss">
-	span {
-		@apply bg-black;
-	}
-</style>

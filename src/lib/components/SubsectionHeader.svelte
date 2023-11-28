@@ -15,9 +15,3 @@
 		<span>{pageTitle}</span>
 	</h1>
 </div>
-
-<style lang="postcss">
-	span {
-		@apply bg-black;
-	}
-</style>
