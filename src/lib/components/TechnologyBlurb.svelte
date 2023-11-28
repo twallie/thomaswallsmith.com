@@ -8,12 +8,8 @@
 	export let description: string;
 	export let bulletpoints: Bulletpoint[];
 
-	export let animateOut: boolean = true;
-
 	export let opened = false;
 	export let onOpen: () => void = () => {};
-
-	$: console.log(animateOut);
 </script>
 
 <Collapsible {title} bind:opened {onOpen} />
