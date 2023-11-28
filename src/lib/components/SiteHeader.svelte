@@ -18,8 +18,8 @@
 	let shaking = false;
 </script>
 
-<button on:click={onClick} class="{shaking ? 'shaking' : ''} mx-auto text-center">
-	<h1 class="text-3xl mr-auto"><span>thomaswallsmith.com</span></h1>
+<button on:click={onClick} class="{shaking ? 'shaking' : ''} text-center">
+	<h1 class="text-2xl sm:text-3xl"><span class="afterme">thomaswallsmith.com</span></h1>
 	<p class="text-sm"><span>the fullstack developer of your dreams</span></p>
 </button>
 
@@ -52,23 +52,14 @@
 		animation: shaking 0.25s;
 	}
 
-	h1::after {
-		translate: 0 5px;
-		margin-left: 2px;
+	.afterme::after {
+		@apply translate-y-1 ml-0.5 bg-[#ffffff] w-0.5 h-[1em] inline-block;
 		content: '';
-		width: 3px;
-		height: 1em;
-		background: #ffffff;
-		display: inline-block;
 		animation: cursor-blink 1.5s steps(2) infinite;
 	}
 
 	h1,
 	p {
 		@apply font-mono;
-	}
-
-	span {
-		@apply bg-black;
 	}
 </style>

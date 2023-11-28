@@ -9,7 +9,9 @@
 	$: atHome = data.url === '/';
 </script>
 
-<div class="flex flex-col mt-20 h-[100%] justify-center align-middle md:mx-40">
+<div
+	class="flex flex-col mt-[2rem] h-[100%] justify-center align-middle mx-[5%] sm:mx-[5%] md:mx-[10%] lg:mx-[17%]"
+>
 	<SiteHeader {atHome} />
 	<div class="flex flex-col mt-5">
 		{#key data.url}
@@ -21,6 +23,10 @@
 </div>
 
 <style lang="postcss">
+	:global(span) {
+		@apply bg-black bg-opacity-75;
+	}
+
 	* {
 		@apply text-white;
 	}
