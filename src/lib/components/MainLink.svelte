@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import type { MainComponents } from '$lib/types';
-
 	export let goesTo: MainComponents;
 
 	const doGoTo = () => {
