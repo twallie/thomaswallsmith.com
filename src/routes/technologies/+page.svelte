@@ -38,8 +38,8 @@
 				points: ['Django', 'Flask']
 			},
 			{
-				title: 'APIs/SDKs',
-				points: ['OpenAI Python API', 'Firebase Python SDK']
+				title: 'Libraries',
+				points: ['OpenAI', 'Firebase']
 			}
 		]
 	};
@@ -67,23 +67,14 @@
 	const sections = [jsTsSection, pythonSection, dbSection];
 
 	const closeOthers = (i: number) => {
-		switch (i) {
-			case 0: {
-				openedArray[1] = false;
-				openedArray[2] = false;
-			}
-			case 1: {
-				openedArray[0] = false;
-				openedArray[2] = false;
-			}
-			case 2: {
-				openedArray[0] = false;
-				openedArray[1] = false;
-			}
+		if (!openedArray[i]) {
+			openedArray.fill(false);
+			openedArray[i] = true;
 		}
 	};
 
 	const openedArray: boolean[] = new Array(3).fill(false);
+	openedArray[0] = true;
 </script>
 
 <SubsectionHeader pageTitle="technologies" />

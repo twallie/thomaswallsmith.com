@@ -5,14 +5,9 @@
 	export let opened = false;
 
 	export let onOpen: () => void = () => {};
-
-	const flipOpened = () => {
-		onOpen();
-		opened = !opened;
-	};
 </script>
 
-<button class="flex flex-row ml-auto" on:click={flipOpened}>
+<button class="flex flex-row ml-auto" on:click={onOpen}>
 	<span>
 		<h1 class="font-bold text-lg font-mono">{title}</h1>
 	</span>
