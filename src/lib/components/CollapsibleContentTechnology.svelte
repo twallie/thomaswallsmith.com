@@ -5,12 +5,12 @@
 	export let bulletpoints: Bulletpoint[];
 </script>
 
-<p class="text-right text-sm">
+<p class="text-right text-sm mt-1 xl:ml-[40%]">
 	<span>
 		{description}
 	</span>
 </p>
-<div class="flex flex-row flex-wrap justify-around xl:ml-[50%] space-x-3 mt-4 mb-4">
+<div class="flex flex-row flex-wrap justify-around xl:ml-[40%] space-x-3 mb-4">
 	{#each bulletpoints as bulletpoint}
 		<div class="mt-2">
 			<span class="text-lg underline font-bold">{bulletpoint.title}</span>
