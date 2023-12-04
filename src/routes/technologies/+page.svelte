@@ -67,19 +67,9 @@
 	const sections = [jsTsSection, pythonSection, dbSection];
 
 	const closeOthers = (i: number) => {
-		switch (i) {
-			case 0: {
-				openedArray[1] = false;
-				openedArray[2] = false;
-			}
-			case 1: {
-				openedArray[0] = false;
-				openedArray[2] = false;
-			}
-			case 2: {
-				openedArray[0] = false;
-				openedArray[1] = false;
-			}
+		if (!openedArray[i]) {
+			openedArray.fill(false);
+			openedArray[i] = true;
 		}
 	};
 

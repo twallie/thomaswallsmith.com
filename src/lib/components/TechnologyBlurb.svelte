@@ -8,7 +8,7 @@
 	export let description: string;
 	export let bulletpoints: Bulletpoint[];
 
-	export let opened = false;
+	export let opened: boolean;
 	export let onOpen: () => void = () => {};
 </script>
 
