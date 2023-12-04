@@ -84,6 +84,7 @@
 	};
 
 	const openedArray: boolean[] = new Array(3).fill(false);
+	openedArray[0] = true;
 </script>
 
 <SubsectionHeader pageTitle="technologies" />
