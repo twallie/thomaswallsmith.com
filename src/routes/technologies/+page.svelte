@@ -38,8 +38,8 @@
 				points: ['Django', 'Flask']
 			},
 			{
-				title: 'APIs/SDKs',
-				points: ['OpenAI Python API', 'Firebase Python SDK']
+				title: 'Libraries',
+				points: ['OpenAI', 'Firebase']
 			}
 		]
 	};
