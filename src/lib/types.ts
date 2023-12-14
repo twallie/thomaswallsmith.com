@@ -1,4 +1,4 @@
-export type MainComponents = 'menu' | 'portfolio' | 'technologies' | 'about' | 'contact';
+export type MainComponents = 'menu' | 'technologies' | 'about' | 'contact';
 
 export interface Bulletpoint {
 	title: string;
