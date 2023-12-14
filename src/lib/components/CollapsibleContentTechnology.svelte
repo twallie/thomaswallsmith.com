@@ -5,7 +5,7 @@
 	export let bulletpoints: Bulletpoint[];
 </script>
 
-<div class="ml-[40%]">
+<div class="sm:ml-[20%] md:ml-[40%]">
 	<p class="text-right text-sm mt-1">
 		<span>
 			{description}
