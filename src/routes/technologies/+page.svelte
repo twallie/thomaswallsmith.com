@@ -7,7 +7,7 @@
 	const jsTsSection: Section = {
 		title: 'JavaScript & TypeScript',
 		description:
-			"TypeScript and it's subset JavaScript are my preferred languages for all things web dev.",
+			"TypeScript and JavaScript are my preferred languages for all things web dev.",
 		bulletpoints: [
 			{
 				title: 'Runtimes',
@@ -15,7 +15,7 @@
 			},
 			{
 				title: 'Frontend',
-				points: ['Svelte', 'React']
+				points: ['React', 'Svelte']
 			},
 			{
 				title: 'Backend',
