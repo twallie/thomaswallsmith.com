@@ -1,9 +1,2 @@
-<script lang="ts">
-	import MainLink from '$lib/components/MainLink.svelte';
-</script>
-
-<div class="mt-[6rem] space-y-5">
-	<MainLink goesTo="technologies" />
-	<MainLink goesTo="contact" />
-	<MainLink goesTo="about" />
-</div>
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
