@@ -1,7 +1,7 @@
 <ul
 	class="
     mt-5 space-y-2 text-2xl font-semibold
-
+    
     "
 >
 	<li>

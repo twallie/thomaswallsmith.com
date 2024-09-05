@@ -1,7 +1,7 @@
 <script>
-	import Links from '../components/Links.svelte';
-	import Title from '../components/Title.svelte';
-	import TitleBlurb from '../components/TitleBlurb.svelte';
+	import Links from '$lib/components/Links.svelte';
+	import Title from '$lib/components/Title.svelte';
+	import TitleBlurb from '$lib/components/TitleBlurb.svelte';
 </script>
 
 <Title />
