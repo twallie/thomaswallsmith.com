@@ -4,8 +4,10 @@ export default {
 	theme: {
 		colors: {
 			base: '#EFF1F3',
-			secondary: '#D8B4A0',
-			primary: '#5E3023'
+			altbase: '#D8B4A0',
+			primary: '#5E3023',
+			secondary: '#133C55',
+			accent: '#D8B4A0'
 		},
 		extend: {
 			fontFamily: {
